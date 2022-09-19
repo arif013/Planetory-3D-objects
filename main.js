@@ -55,6 +55,7 @@ earth.add(moon)
 moon.position.x = 25
 
 
+
 // Lights
 
 const pointLight = new THREE.PointLight(0xffffff);
@@ -80,6 +81,9 @@ function animate(){
   // For sphere 2
   earth.rotateY(0.01)
   earth.rotateX(0.001)  
+
+  // For sphere 3
+  moon.rotateY(0.02)  
 
 }
 animate()
